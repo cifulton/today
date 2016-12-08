@@ -1,0 +1,15 @@
+/**This is an example of external style sheet8**/
+
+@font-face {
+  font-family: 'chris';
+  src: url('font/bebasneue.eot'); /* IE9 Compat Modes */
+  src: url('font/bebasneue.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/bebasneue.woff2') format('woff2'), /* Super Modern Browsers */
+       url('font/bebasneue.woff') format('woff'), /* Pretty Modern Browsers */
+       url('font/bebasneue.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('font/bebasneue.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+
+

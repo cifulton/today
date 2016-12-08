@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>First Web Page</title>
+		<!--Example of Internal CSS method-->
+		<style>
+		
+		@-webkit-keyframes scrollBanner{from
+			{
+				background-position:0 0;}to{background-position:100% 0;}}@-moz-keyframes scrollBanner{from{background-position:0 0;}to{background-position:100% 0;}}@-ms-keyframes scrollBanner{from{background-position:0 0;}to{background-position:100% 0;}}@-o-keyframes scrollBanner{from{background-position:0 0;}to{background-position:100% 0;}}@keyframes scrollBanner{from{background-position:0 0;}to{background-position:100% 0;}}
+			.topbanner1{
+				position:relative; 
+				padding-top: 3%;
+				height: 250px; 
+				margin: 0px 0 14px 0;
+				background:url('images/topbanner.png') repeat-x;-webkit-transform:translate3d(0,0,0);
+				  -moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);
+				  -o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);
+				  -webkit-animation:scrollBanner 25s infinite linear;
+				  -moz-animation:scrollBanner 25s infinite linear;
+				  -ms-animation:scrollBanner 25s infinite linear;
+				  -o-animation:scrollBanner 25s infinite linear;
+				animation:scrollBanner 25s infinite linear;
+			}
+		
+			body {
+				font-family: 'Raleway', sans-serif;
+				font-size: 16px;
+				margin: 0;
+
+			}
+			.format{
+				
+				height: 390px;
+				
+				
+			
+			}
+			#logo{
+				
+				width: 150px;
+				float: left;
+				margin: 2em;
+			
+			}
+
+		h1,h2,h3,h4,h5,h6{
+		    font-family: 'chris';
+			line-height: 2em;
+			word-spacing: 3px;
+			letter-spacing: 1px;
+		
+		}
+		img {
+				max-width: 100%;
+		
+		}
+		
+		h1{
+			font-size: 32px;
+			font-size: 55px;
+		}
+		
+		h2 {
+			color: #666666;
+			font-size: 30px;
+		}
+		
+		.blockone{
+			text-align: center;
+			width: 400px;
+			
+			float: left;
+			margin: auto;
+			height: 350px;
+			margin-top: 3em;
+			font-size: 1.2em;
+			
+		}
+		a{
+			text-decoration: none;
+			vertical-align: top;
+			font-size: 26px;
+		
+		}
+		
+		a:link{
+			color: black;
+			font-size: 26px;
+			font-weight: 700;
+		
+		}
+		
+		a:hover{
+			background-color: orange;
+			color: white;
+			text-shadow: 3px 3px #333;
+		
+		}
+		
+		a:visited{
+			color: green;
+			text-shadow: 3px 3px #eee;
+		
+		}
+		
+		a:active{
+			color: pink;
+			font-size: 52px;
+		
+		}
+		#homeicon{
+			list-style-image: url(images/home.png);
+			width: 215px;
+			float: left;
+		}
+		#aboutusicon{
+			list-style-image: url(images/aboutus.jpg);
+			width: 215px;
+			float: left;
+		}
+		#contacticon{
+			list-style-image: url(images/contactus.png);
+			width: 215px;
+			float: left;
+		}
+		.boxcontain{
+			width: 85%;
+			margin: auto;
+			display: flex;
+		
+		}
+		.mainboxcontain{
+			width: 100%;
+			height: 600px;
+			background-color: #eee;
+		
+		}
+		#headstruct{
+			height: 140px;
+			width: 100%;
+			clear: both;
+		
+		}
+		.navstruct{
+			float: right;
+			margin-top: 2em;
+		
+		}
+		.ulstruct{
+			display: flex;
+			margin:auto;
+		
+		}
+		/**Media Query for width of 768**/
+		@media screen and (min-width: 600px) and (max-width: 1024px){
+
+			.format {
+				height: 500px;
+			}
+			#headstruct {
+				height: 220px;
+				
+				
+			}
+			#logo {
+				width: 230px;
+				float: none;
+				margin-top: 1em;
+				margin: auto;
+			}
+			.navstruct {
+				display: flex;
+				margin-top: 2em;
+				clear: both;
+				width: 100%;
+				float: none;
+			}
+			#homeicon {
+				
+				width: 185px;
+				
+			}
+			#aboutusicon{
+			width: 185px;
+			}
+			#contacticon{
+			width: 185px;
+			}
+			.boxcontain{
+				width: 90%;
+
+			
+			}
+
+		
+		}
+			
+		/**Media Query for width of 600**/
+		@media screen and (max-width: 600px){
+			body{
+				background-color: green;
+			}
+			.format {
+				height: 500px;
+			}
+			#headstruct {
+				height: 260px;
+				
+				
+			}
+			#logo {
+				width: 230px;
+				float: none;
+				margin-top: 1em;
+				margin: auto;
+			}
+			#homeicon{
+				list-style-image: url(images/home.png);
+				width: 215px;
+				float: left;
+			}
+			#aboutusicon{
+				list-style-image: url(images/aboutus.jpg);
+				width: 215px;
+				float: left;
+			}
+			#contacticon{
+				list-style-image: url(images/contactus.png);
+				width: 215px;
+				float: left;
+			}
+			.navstruct {
+				display: flex;
+				margin-top: 2em;
+				clear: both;
+				width: 100%;
+				float: none;
+			}
+			.ulstruct{
+			
+				display: block;
+			}
+		
+		}
+
+			
+		
+		</style>
+		<!--Google Font Raleway-->
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800,900" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="description" content="First webpage of CWEB1010 section 03">
+		<meta name="keywords" content="HTML5, Sample document">
+		<meta name="author" content="Instructor C.Fulton">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	</head>
+	<body>
+			<header class="format">
+				<div class="boxcontain">
+					<div id="headstruct">
+						<div id="logo"><img src="images/logo.png" alt="logo placeholder"></div>
+						<!-- This is our main navigation -->
+						<nav class="navstruct">
+							<ul class="ulstruct">
+								<li id="homeicon"><a href="index.html">Home</a></li>
+								<li id="aboutusicon"><a href="aboutus.html">About Us</a></li>
+								<li id="contacticon"><a href="contact.html">Contact Us</a></li>
+							</ul>
+						</nav>
+					</div><!--End of headstruct-->
+				</div><!--end of boxcontain -->
+				<div class="topbanner1"></div>
+			</header>
+
+			<article>
+				<div class="mainboxcontain">
+					<div class="boxcontain">
+
+						<section class="blockone">
+							<img src="images/mail.png" width="200" alt="mail icon">
+							<h2 >This is the h2 </h2>
+							<blockquote>Our greatest glory is not in never falling, but in rising every time we fall. </blockquote>
+							<p>This is an early morning class.  We have a quiz next week on CSS.  Our first
+							   assignment is due on Tuesday.  The team deliverable is due on Friday of next week. </p>
+						
+						</section>
+						<section class="blockone">
+							<img src="images/apticon.png" width="200" alt="mail icon">
+							<h2 >This is the h2 </h2>
+							<blockquote>Our greatest glory is not in never falling, but in rising every time we fall. </blockquote>
+							<p>This is an early morning class.  We have a quiz next week on CSS.  Our first
+							   assignment is due on Tuesday.  The team deliverable is due on Friday of next week. </p>
+						
+						</section>
+						<section class="blockone">
+							<img src="images/search-icon.png" width="200" alt="mail icon">
+							<h2 >This is the h2 </h2>
+							<blockquote>Our greatest glory is not in never falling, but in rising every time we fall. </blockquote>
+							<p>This is an early morning class.  We have a quiz next week on CSS.  Our first
+							   assignment is due on Tuesday.  The team deliverable is due on Friday of next week. </p>
+						
+						</section>
+					</div><!--End of boxcontain-->
+				</div><!--End of mainboxcontain-->
+			</article>
+			<footer>
+
+			</footer>
+
+	</body>
+</html>
